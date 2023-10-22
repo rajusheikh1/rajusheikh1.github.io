@@ -1,0 +1,478 @@
+*{
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+html {
+
+    height: 100%;
+    width: 100%;
+    /* background-image: url(./skectch\ copy.jpg);
+    background-size: cover; */
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    margin: 10px;
+}
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: blueviolet;
+}
+.menu img{
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+}
+.menu-close img{
+    width: 35px;
+    position: absolute;
+    right: 20;
+    top: 15;
+    cursor: pointer;
+}
+.left1, .left2{
+    display: flex;
+    gap: 40px;
+}
+.left1  a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+.left1 a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background-color: blueviolet;
+    transition: 0.5s;
+    bottom: -1px;
+    left: 0px;
+}
+.left1 a:hover::after{
+    width: 100%;
+}
+/* .active{
+    position: absolute;
+    background-color: transparent;
+    border-bottom: 2px solid blueviolet;
+    bottom: -1px;
+    left: 0px;
+} */
+
+.content{
+    height: calc(100% - 3vw);
+    width: 100%;
+    display: flex;
+    padding: 5vw 3vw;
+}
+.left-content{
+    height: 100%;
+    width: 55%;
+}
+.left-content p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    width: 80%;
+    padding: 2vw 0.00001vw;
+}
+.btn1{
+    position: relative;
+    width: fit-content;
+    background-color: transparent;
+    color: blueviolet;
+    padding: 10px 5px;
+    border-radius: 4px;
+    border: 2px solid blueviolet;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.span1{
+    background-color: blueviolet;
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    z-index: -1;
+    transition: 1s;
+    opacity: 1;
+}
+.span2{
+    background-color: blueviolet;
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    right: 50%;
+    bottom: 0px;
+    z-index: -2;
+    transition: 1s;
+    opacity: 1;
+}
+.btn1:hover .span1{
+    width: 50%;
+
+}
+.btn1:hover .span2{
+    width: 50%;
+
+}
+.btn1:hover{
+    color: white;
+}
+/* .btn1:hover{
+    background-color: transparent;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    left: 0px;
+    bottom: 0px;
+    padding: none;
+} */
+.intro{
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 5vw;
+}
+.intro span{
+    color: blueviolet;
+}
+.right-content{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    position: relative;
+    top: -6%;
+    border-radius: 50%;
+    background-color: rgba(150, 158, 146, 0.699);
+    height:  32.63vw;
+    width: 32.63vw;
+    border: 7px solid blueviolet;
+    overflow: hidden;
+}
+.circle>img{
+    object-fit: cover;
+    height: 110%;
+    width: 140%;
+    position: relative;
+    right: 190px;
+}
+/* .right-content img{
+    height: 100%;
+    width: 100%;
+    animation-name: move;
+    animation-duration: 0.5s;
+} */
+
+.mywork h2{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.mywork{
+    left: 10%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid blueviolet;
+}
+.photoshop{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+.photoshop-right, .photoshop-middle, .photoshop-left{
+    height: 100%;
+    width: 80%;
+    object-fit:contain;
+    border-radius: 10px;
+    margin: 20px;
+}
+.work{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    /* filter: blur(8px);
+    transition: 0.3s; */
+}
+/* .work:hover{
+    filter: none;
+} */
+.work:active{
+    filter: none;
+}
+.contact{
+    width: 100%;
+    padding: 80px 150px;
+    display: flex;
+}
+.contact-left{
+    height: 100%;
+    width: 50%;
+}
+.contact-left>h1{
+    font-weight: 600;
+    font-size: 50px;
+}
+.contact-left>h1:nth-child(3){
+    padding-bottom: 20px;
+}
+.contact-left p{
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.mail{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    left: 20px;
+    align-items: center;
+}
+.mail-logo img{
+    height: 20px;
+    width: 22px;
+}
+.mail-id h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+.mail-id>a{
+    color:blueviolet;
+    font-weight: 600;
+}
+
+.contact-right{
+    height: 100%;
+    width: 50%;
+}
+.contact-right h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.inputs .input1, .input2, .input3{
+    background-color: rgb(243, 243, 243);
+    border: none;
+    margin: 10px 0px;
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+#input4{
+    background-color: rgb(243, 243, 243);
+    border: none;
+    margin: 10px 0px;
+    height: 25%;
+    width: 80%;
+    border-radius: 5px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+}
+.inputs button{
+    height: 45px;
+    width: 140px;
+    background-color: blueviolet;
+    color: white;
+    padding: 0.6vw 0.6vw;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+}
+.inputs button:hover{
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.left2 {
+    position: relative;
+    display: none;
+    left: 0;
+    top: 0;
+    font-weight: 600;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    z-index: 10000;
+    position: fixed;
+    
+}
+.menu-close1{
+    position: absolute;
+    left: 45% ;
+    width: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.left2 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.left2 a{
+    height: 100px;
+    text-decoration: none;
+    font-size: 25px;
+}
+@media (max-width: 600px){
+    .left1{
+        display: none;
+    }
+
+
+    .nav{
+        padding: 20px 15px;
+    }
+    .logo{
+        font-size: 8vw;
+    }
+    .menu img{
+        display: initial;
+    }
+    .menu-close{
+        display: none;
+    }
+    .content{
+        height: 100%;
+        width: 100%;
+        display: inline;
+    }
+    .left-content{
+        padding: 40px 0px 15px 15px;
+        width: 100%;
+        height: 40%;
+    }
+    .right-content{
+        width: 100%;
+        height: 30%
+    }
+    .circle{
+        position: relative;
+        height:  250px;
+        width: 250px;
+    }
+    .circle>img{
+        object-fit: cover;
+        position: relative;
+        right: 91px;
+        top: 65px;
+        scale: 2;
+    }
+    .intro{
+        font-size: 10vw;
+        width: 100%;
+        line-height: 13vw;
+    }
+    .left-content p{
+        font-size: 4vw;
+        width: 85%;
+    }
+    .btn1{
+        padding: 2vw 2vw;
+    }
+    .right-content img{
+        width: 100%;
+        height: 60%;
+    }
+    .photoshop{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 0;
+        margin: 350px 0px 0px 15px;
+
+    }
+    .contact-left{
+        width: 100%;
+    }
+    .contact-left>h1{
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .contact-left>h1:nth-child(3){
+        padding-bottom: 20px;
+    }
+    .mail{
+        left: 0px;
+    }
+    .mail-id{
+        display: flex;
+        gap: 10px;
+    }
+    .contact-right{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact-right h1{
+        margin-top:15px;
+    }
+    #input4{
+        padding: 10px;
+    }
+    .inputs button{
+        height: 45px;
+        width: 140px;
+        background-color: blueviolet;
+        color: white;
+        padding: 0.6vw 0.6vw;
+        border-radius: 4px;
+        border: none;
+        text-align: center;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+        letter-spacing: 0.6px;
+    }
+    .inputs button:hover{
+        background-color: white;
+        color: blueviolet;
+        border: 2px solid blueviolet;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+}
+@keyframes move {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
